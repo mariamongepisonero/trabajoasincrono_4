@@ -44,6 +44,23 @@
             opacity: 0;
             /*invisible*/
             transition: opacity 0.5s ease;
+
+            /*para que la imagen de fondo aparezca una vez en grande*/
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+
+        }
+
+        .overlay {
+            /*para oscurecer un poco el fondo y se lea mejor el texto*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
         }
 
         /* Estilo items */
@@ -87,36 +104,38 @@
 
 <body>
     <div class="container" id="grid">
-        <div class="background" id="bg"></div>
+        <div class="background" id="background">
+            <div class="overlay"></div>
+        </div>
         <!-- ítems -->
-        <div class="item" data-image="./img/zpump.jpg">
+        <div class="item" data-image="./img/1.jpg">
             <h1>ZPump Urban Fit</h1><small>Reebok</small>
         </div>
-        <div class="item" data-image="./img/coach2o.jpg">
+        <div class="item" data-image="./img/2.jpg">
             <h1>Coach2o</h1><small>Font Vella</small>
         </div>
-        <div class="item" data-image="./img/rcar.jpg">
+        <div class="item" data-image="./img/3.jpg">
             <h1>RCar</h1><small>Revista Car</small>
         </div>
-        <div class="item" data-image="./img/emotional_pulse.jpg">
+        <div class="item" data-image="./img/4.jpg">
             <h1>Emotional Pulse</h1><small>Seidor</small>
         </div>
-        <div class="item" data-image="./img/alhambra.jpg">
+        <div class="item" data-image="./img/5.jpg">
             <h1>Alhambra</h1><small>Cervezas Alhambra</small>
         </div>
-        <div class="item" data-image="./img/actimel.jpg">
+        <div class="item" data-image="./img/6.jpg">
             <h1>Actimel</h1><small>Danone</small>
         </div>
-        <div class="item" data-image="./img/ffuuss.jpg">
+        <div class="item" data-image="./img/7.jpg">
             <h1>ffuuss</h1><small>OTS Group</small>
         </div>
-        <div class="item" data-image="./img/delicious.jpg">
+        <div class="item" data-image="./img/8.jpeg">
             <h1>Delicious</h1><small>Día</small>
         </div>
-        <div class="item" data-image="./img/roca.jpg">
+        <div class="item" data-image="./img/9.jpg">
             <h1>Roca</h1><small>Sanitarios</small>
         </div>
-        <div class="item" data-image="path/to/deep_state.jpg">
+        <div class="item" data-image="path/to/10.jpg">
             <h1>Deep State</h1><small>Fox</small>
         </div>
     </div>
